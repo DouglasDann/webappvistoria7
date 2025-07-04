@@ -208,7 +208,15 @@
         <td class="text-center status"><input type="radio" name="cozinha2" id="naC2"><label for="naC2">N/A</label></td>
         <td class="text-center status"><input type="radio" name="cozinha2" id="cC2"><label for="cC2">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="cozinha2" id="ncC2"><label for="ncC2">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control"></td>
       </tr>
       <tr>
@@ -216,7 +224,15 @@
         <td class="text-center status"><input type="radio" name="cozinha3" id="naC3"><label for="naC3">N/A</label></td>
         <td class="text-center status"><input type="radio" name="cozinha3" id="cC3"><label for="cC3">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="cozinha3" id="ncC3"><label for="ncC3">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control"></td>
       </tr>
       <tr>
@@ -224,7 +240,15 @@
         <td class="text-center status"><input type="radio" name="cozinha4" id="naC4"><label for="naC4">N/A</label></td>
         <td class="text-center status"><input type="radio" name="cozinha4" id="cC4"><label for="cC4">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="cozinha4" id="ncC4"><label for="ncC4">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control"></td>
       </tr>
       <tr>
@@ -232,7 +256,15 @@
         <td class="text-center status"><input type="radio" name="cozinha5" id="naC5"><label for="naC5">N/A</label></td>
         <td class="text-center status"><input type="radio" name="cozinha5" id="cC5"><label for="cC5">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="cozinha5" id="ncC5"><label for="ncC5">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control"></td>
       </tr>
     </tbody>
@@ -278,15 +310,30 @@
         <td class="text-center status"><input type="radio" name="servico1" id="naS1"><label for="naS1">N/A</label></td>
         <td class="text-center status"><input type="radio" name="servico1" id="cS1"><label for="cS1">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="servico1" id="ncS1"><label for="ncS1">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control"></td>
       </tr>
       <tr>
         <td>Instalações hidráulicas (máquina, tanque)</td>
         <td class="text-center status"><input type="radio" name="servico2" id="naS2"><label for="naS2">N/A</label></td>
         <td class="text-center status"><input type="radio" name="servico2" id="cS2"><label for="cS2">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="servico2" id="ncS2"><label for="ncS2">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="text-center status"><input type="radio" name="servico2        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
         <td><input type="text" class="form-control"></td>
       </tr>
       <tr>
@@ -294,7 +341,15 @@
         <td class="text-center status"><input type="radio" name="servico3" id="naS3"><label for="naS3">N/A</label></td>
         <td class="text-center status"><input type="radio" name="servico3" id="cS3"><label for="cS3">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="servico3" id="ncS3"><label for="ncS3">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control"></td>
       </tr>
       <tr>
@@ -302,7 +357,15 @@
         <td class="text-center status"><input type="radio" name="servico4" id="naS4"><label for="naS4">N/A</label></td>
         <td class="text-center status"><input type="radio" name="servico4" id="cS4"><label for="cS4">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="servico4" id="ncS4"><label for="ncS4">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control"></td>
       </tr>
     </tbody>
@@ -349,7 +412,15 @@
         <td class="text-center status"><input type="radio" name="sala1" id="naSa1"><label for="naSa1">N/A</label></td>
         <td class="text-center status"><input type="radio" name="sala1" id="cSa1"><label for="cSa1">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="sala1" id="ncSa1"><label for="ncSa1">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -357,7 +428,15 @@
         <td class="text-center status"><input type="radio" name="sala2" id="naSa2"><label for="naSa2">N/A</label></td>
         <td class="text-center status"><input type="radio" name="sala2" id="cSa2"><label for="cSa2">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="sala2" id="ncSa2"><label for="ncSa2">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -365,7 +444,15 @@
         <td class="text-center status"><input type="radio" name="sala3" id="naSa3"><label for="naSa3">N/A</label></td>
         <td class="text-center status"><input type="radio" name="sala3" id="cSa3"><label for="cSa3">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="sala3" id="ncSa3"><label for="ncSa3">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -373,7 +460,15 @@
         <td class="text-center status"><input type="radio" name="sala4" id="naSa4"><label for="naSa4">N/A</label></td>
         <td class="text-center status"><input type="radio" name="sala4" id="cSa4"><label for="cSa4">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="sala4" id="ncSa4"><label for="ncSa4">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
     </tbody>
@@ -421,7 +516,15 @@
         <td class="text-center status"><input type="radio" name="dormitorio1" id="naD1"><label for="naD1">N/A</label></td>
         <td class="text-center status"><input type="radio" name="dormitorio1" id="cD1"><label for="cD1">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="dormitorio1" id="ncD1"><label for="ncD1">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -429,7 +532,15 @@
         <td class="text-center status"><input type="radio" name="dormitorio2" id="naD2"><label for="naD2">N/A</label></td>
         <td class="text-center status"><input type="radio" name="dormitorio2" id="cD2"><label for="cD2">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="dormitorio2" id="ncD2"><label for="ncD2">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -437,7 +548,15 @@
         <td class="text-center status"><input type="radio" name="dormitorio3" id="naD3"><label for="naD3">N/A</label></td>
         <td class="text-center status"><input type="radio" name="dormitorio3" id="cD3"><label for="cD3">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="dormitorio3" id="ncD3"><label for="ncD3">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
     </tbody>
@@ -485,7 +604,15 @@
         <td class="text-center status"><input type="radio" name="banheiro1" id="naB1"><label for="naB1">N/A</label></td>
         <td class="text-center status"><input type="radio" name="banheiro1" id="cB1"><label for="cB1">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="banheiro1" id="ncB1"><label for="ncB1">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -493,7 +620,15 @@
         <td class="text-center status"><input type="radio" name="banheiro2" id="naB2"><label for="naB2">N/A</label></td>
         <td class="text-center status"><input type="radio" name="banheiro2" id="cB2"><label for="cB2">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="banheiro2" id="ncB2"><label for="ncB2">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -501,7 +636,15 @@
         <td class="text-center status"><input type="radio" name="banheiro3" id="naB3"><label for="naB3">N/A</label></td>
         <td class="text-center status"><input type="radio" name="banheiro3" id="cB3"><label for="cB3">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="banheiro3" id="ncB3"><label for="ncB3">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -509,7 +652,15 @@
         <td class="text-center status"><input type="radio" name="banheiro4" id="naB4"><label for="naB4">N/A</label></td>
         <td class="text-center status"><input type="radio" name="banheiro4" id="cB4"><label for="cB4">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="banheiro4" id="ncB4"><label for="ncB4">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
     </tbody>
@@ -557,7 +708,15 @@
         <td class="text-center status"><input type="radio" name="sacada1" id="naSac1"><label for="naSac1">N/A</label></td>
         <td class="text-center status"><input type="radio" name="sacada1" id="cSac1"><label for="cSac1">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="sacada1" id="ncSac1"><label for="ncSac1">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -565,7 +724,15 @@
         <td class="text-center status"><input type="radio" name="sacada2" id="naSac2"><label for="naSac2">N/A</label></td>
         <td class="text-center status"><input type="radio" name="sacada2" id="cSac2"><label for="cSac2">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="sacada2" id="ncSac2"><label for="ncSac2">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -573,7 +740,15 @@
         <td class="text-center status"><input type="radio" name="sacada3" id="naSac3"><label for="naSac3">N/A</label></td>
         <td class="text-center status"><input type="radio" name="sacada3" id="cSac3"><label for="cSac3">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="sacada3" id="ncSac3"><label for="ncSac3">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
       <tr>
@@ -581,7 +756,15 @@
         <td class="text-center status"><input type="radio" name="sacada4" id="naSac4"><label for="naSac4">N/A</label></td>
         <td class="text-center status"><input type="radio" name="sacada4" id="cSac4"><label for="cSac4">Conforme</label></td>
         <td class="text-center status"><input type="radio" name="sacada4" id="ncSac4"><label for="ncSac4">Não Conforme</label></td>
-        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+        <td class="foto-col text-center">
+          <div class="fotos-container">
+            <!-- Miniaturas aparecerão aqui -->
+          </div>
+          <label class="cursor-pointer">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
+          </label>
+        </td>
         <td><input type="text" class="form-control" /></td>
       </tr>
     </tbody>
