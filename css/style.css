@@ -1,0 +1,96 @@
+    body {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .sticky-icons {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #f4f4f4;
+      padding: 10px 0;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .icone-aba {
+      cursor: pointer;
+    }
+    .icone-aba.active i {
+      color: #F7BE02; /* mesma cor do status checked */
+    }
+    .hidden {
+      display: none;
+    }
+    label.form-label, label.fw-bold {
+      font-weight: bold !important;
+    }
+    .btn-salvar-ambiente {
+      background-color: #191970;
+      color: #fff;
+    }
+    .btn-salvar-vistoria {
+      background-color: #062f4f;
+      color: #f4f4f4;    
+    }
+    .btn-voltar-formulario {
+      background-color: #F7BE02;
+      color: #000;
+    }
+    .btn-secondary {
+      background-color: #2FDA49;
+      color: #000;
+    }
+    .checklist-tabela table {
+      background-color: #fff;
+      border-color: #ddd !important;
+    }
+
+    .checklist-tabela th {
+      background-color: #373737 !important;
+      color: white !important;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .checklist-tabela td {
+      background-color: #f4f4f4;
+      vertical-align: middle;
+      padding: 6px;
+    }
+
+    .checklist-tabela td.elemento-avaliado {
+      white-space: normal;
+      word-wrap: break-word;
+      max-width: 300px;
+    }
+
+    .checklist-tabela td.foto-col i {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #444;
+    }
+
+    .checklist-tabela td.observacao-col input {
+      width: 100%;
+    }
+
+    .checklist-tabela .status input[type="radio"] {
+      display: none;
+    }
+
+    .checklist-tabela .status label {
+      display: block;
+      padding: 6px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .checklist-tabela .status input[type="radio"]:checked + label {
+      background-color: #F7BE02;
+      color: black;
+ }

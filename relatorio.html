@@ -1,0 +1,384 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>Relatório Final da Vistoria</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: #eef1f5;
+      padding: 30px;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      border-bottom: 3px solid #191970;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      color: #191970;
+      font-size: 22px;
+      margin: 0;
+    }
+
+    table.info {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    table.info th {
+      text-align: left;
+      background: #191970;
+      color: #fff;
+      padding: 8px;
+      width: 40%;
+    }
+
+    table.info td {
+      width: 60%;
+      background: #dee2e6;
+      padding: 8px;
+    }
+
+    .ambiente-card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 40px;
+      border-left: 6px solid #191970;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      page-break-inside: avoid;
+    }
+
+    .ambiente-card h2 {
+      color: #191970;
+      margin-top: 0;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-editar {
+      margin-left: auto;
+      background-color: #191970;
+      color: #fff;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tabela-itens {
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    .tabela-itens th,
+    .tabela-itens td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      vertical-align: top;
+    }
+
+    .tabela-itens th:nth-child(1),
+    .tabela-itens td:nth-child(1) {
+      width: 35%;
+    }
+
+    .tabela-itens th:nth-child(2),
+    .tabela-itens td:nth-child(2) {
+      width: 10%;
+      text-align: center;
+    }
+
+    .tabela-itens th:nth-child(3),
+    .tabela-itens td:nth-child(3) {
+      width: auto;
+    }
+
+    .tabela-itens th:nth-child(4),
+    .tabela-itens td:nth-child(4) {
+      width: 40%;
+      text-align: left;
+      vertical-align: top;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+
+    .status {
+      display: block;
+      text-align: center;
+    }
+
+    .status.conforme { color: green; font-weight: bold; }
+    .status.na { color: #555; font-weight: bold; }
+    .status.nao { color: red; font-weight: bold; }
+
+    .fotos-lateral {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .fotos-lateral img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid #999;
+    }
+
+    #assinatura {
+      border: 1px solid #aaa;
+      width: 100%;
+      max-width: 400px;
+      height: 150px;
+      margin: 10px auto;
+      display: block;
+      cursor: crosshair;
+      background-color: white;
+    }
+
+    .hash-box {
+      margin-top: 10px;
+      font-family: monospace;
+      font-size: 12px;
+      background: #f1f1f1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      word-wrap: break-word;
+    }
+
+    .assinatura-bloco {
+      border-top: 2px dashed #999;
+      padding-top: 40px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .assinatura-bloco p {
+      margin: 6px 0;
+    }
+
+    button {
+      background-color: #191970;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .ambiente-card {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" />
+    <div>
+      <h1>Relatório de Vistoria Técnica</h1>
+      <p>Data: <span id="data-vistoria"></span></p>
+    </div>
+  </header>
+
+  <table class="info">
+    <tr><th>Responsável</th><td id="nome-responsavel">—</td></tr>
+    <tr><th>Empresa</th><td id="empresa-responsavel">—</td></tr>
+    <tr><th>Endereço da Obra</th><td id="endereco-obra">—</td></tr>
+  </table>
+
+  <div id="relatorio-container"></div>
+
+  <div class="assinatura-bloco">
+    <h4>Declaração</h4>
+    <p>Confirmo que acompanhei a vistoria técnica e estou ciente dos itens apontados neste relatório.</p>
+    <p style="margin: 40px 0;" id="assinatura-nome">_______________________________</p>
+
+    <canvas id="assinatura" width="400" height="150" style="background-color: white;"></canvas><br />
+    <button onclick="limparAssinatura()">Limpar</button>
+    <button onclick="finalizarVistoria()">Finalizar Vistoria</button>
+    <div id="hash-output" class="hash-box">SHA-256: aguardando geração...</div>
+
+    <p id="nome-proprietario">Assinatura de: [Nome do Proprietário]</p>
+    <p>Data do Relatório: <span id="data-atual"></span></p>
+    <button onclick="gerarPDF()">Gerar PDF</button>
+  </div>
+</body>
+<script>
+  const iconesAmbientes = {
+    cozinha: "fa-utensils",
+    sala: "fa-couch",
+    banheiro: "fa-toilet",
+    quarto: "fa-bed",
+    area: "fa-hands-bubbles",
+    "área": "fa-hands-bubbles"
+  };
+
+  function formatarStatus(status) {
+    const s = (status || "").toLowerCase();
+    if (s.includes("não")) return "nao";
+    if (s.includes("n/a")) return "na";
+    return "conforme";
+  }
+
+  function gerarRelatorio() {
+    const hoje = new Date();
+    const formatado = hoje.toLocaleDateString("pt-BR");
+    document.getElementById("data-vistoria").textContent = formatado;
+    document.getElementById("data-atual").textContent = formatado;
+
+    document.getElementById("nome-responsavel").textContent = localStorage.getItem("nomeVistoriador") || "—";
+    document.getElementById("empresa-responsavel").textContent = localStorage.getItem("empresaVistoria") || "—";
+    document.getElementById("endereco-obra").textContent = localStorage.getItem("enderecoObra") || "—";
+    document.getElementById("nome-proprietario").textContent = `Assinatura de: ${localStorage.getItem("proprietario") || "[Não informado]"}`;
+
+    const container = document.getElementById("relatorio-container");
+    container.innerHTML = "";
+
+    Object.keys(localStorage).forEach(chave => {
+      if (!chave.startsWith("aba-")) return;
+
+      const dados = JSON.parse(localStorage.getItem(chave));
+      if (!Array.isArray(dados) || dados.length === 0) return;
+
+      const ambienteNome = chave.replace("aba-", "");
+      const icone = Object.entries(iconesAmbientes).find(([nome]) =>
+        ambienteNome.toLowerCase().includes(nome)
+      );
+
+      const div = document.createElement("div");
+      div.className = "ambiente-card";
+
+      div.innerHTML = `
+        <h2>
+          <i class="fa-solid ${icone ? icone[1] : "fa-house"}"></i> ${ambienteNome.charAt(0).toUpperCase() + ambienteNome.slice(1)}
+          <button onclick="editarAmbiente('${ambienteNome}')" class="btn-editar">
+            <i class="fa-solid fa-pen-to-square"></i> Editar
+          </button>
+        </h2>
+        <table class="tabela-itens">
+          <thead>
+            <tr>
+              <th>Item Avaliado</th>
+              <th>Status</th>
+              <th>Fotos</th>
+              <th>Observação</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${dados.map(linha => `
+              <tr>
+                <td>${linha.item || "—"}</td>
+                <td><span class="status ${formatarStatus(linha.status)}">${linha.status || "—"}</span></td>
+                <td class="fotos-lateral">
+                  ${(linha.fotos || []).map(f => `<img src="${f.base64}" alt="${f.nome}" />`).join("")}
+                </td>
+                <td>${linha.obs || "—"}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  gerarRelatorio();
+
+  function editarAmbiente(nomeAmbiente) {
+    alert(`Reabrindo edição do ambiente: ${nomeAmbiente}`);
+    // Aqui você pode redirecionar para a aba correspondente
+  }
+
+  const canvas = document.getElementById("assinatura");
+  const ctx = canvas.getContext("2d");
+  let desenhando = false;
+
+  function getPos(e) {
+    const rect = canvas.getBoundingClientRect();
+    const isTouch = e.touches?.[0];
+    const x = isTouch ? isTouch.clientX : e.clientX;
+    const y = isTouch ? isTouch.clientY : e.clientY;
+    return { x: x - rect.left, y: y - rect.top };
+  }
+
+  function iniciarDesenho(e) {
+    desenhando = true;
+    const pos = getPos(e);
+    ctx.beginPath();
+    ctx.moveTo(pos.x, pos.y);
+  }
+
+  function desenhar(e) {
+    if (!desenhando) return;
+    e.preventDefault();
+    const pos = getPos(e);
+    ctx.lineTo(pos.x, pos.y);
+    ctx.stroke();
+  }
+
+  function pararDesenho() {
+    desenhando = false;
+  }
+
+  canvas.addEventListener("mousedown", iniciarDesenho);
+  canvas.addEventListener("mousemove", desenhar);
+  canvas.addEventListener("mouseup", pararDesenho);
+  canvas.addEventListener("touchstart", iniciarDesenho);
+  canvas.addEventListener("touchmove", desenhar);
+  canvas.addEventListener("touchend", pararDesenho);
+
+  function limparAssinatura() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  function finalizarVistoria() {
+    const conteudo = document.body.innerText + canvas.toDataURL();
+    const encoder = new TextEncoder();
+    const dados = encoder.encode(conteudo);
+
+    crypto.subtle.digest("SHA-256", dados).then(hashBuffer => {
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      const hashHex = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+      document.getElementById("hash-output").textContent = "SHA-256: " + hashHex;
+
+      const historico = JSON.parse(localStorage.getItem("vistoria-historico") || "[]");
+      historico.push({
+        timestamp: Date.now(),
+        hash: hashHex,
+        alteracoes: [] // logs futuros
+      });
+      localStorage.setItem("vistoria-historico", JSON.stringify(historico));
+    });
+  }
+
+  function gerarPDF() {
+    alert("Função de exportação para PDF será configurada em breve!");
+  }
+</script>
