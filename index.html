@@ -82,18 +82,27 @@
             </select>
           </div>
           <div class="col-md-4 mb-3">
-            <label for="banheiros" class="form-label">Banheiros</label>
-            <select id="banheiros" class="form-select">
-              <option value="1">1</option>
+            <!---label for="banheiros" class="form-label">Banheiros</label--->
+            <!---
+            <select id="banheiros" class="stepper-container">
+              <label for="banheiros">Banheiros</label>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
+          </div> -->
+            <div id="banheiros" class="stepper-container">
+              <label for="banheiros">Banheiros</label>
+              <div class="stepper">
+                <button type="button" onclick="alternarQuantidade('banheiros, -1')">-</button>
+                <input type="number" id="banheiros" value="1" min="0" max="4" readonly>
+                <button type="button" onclick="alternarQuantidade('banheiros', 1)">+</button>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="areaPrivativa" class="form-label">Área Privativa (m²)</label>
+              <input type="number" id="areaPrivativa" step="0.01" class="form-control">
+            </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <label for="areaPrivativa" class="form-label">Área Privativa (m²)</label>
-            <input type="number" id="areaPrivativa" step="0.01" class="form-control">
-          </div>
-        </div>
       </section>
 
       <!-- Dados do Vistoriador -->
@@ -114,7 +123,7 @@
               </select>
             </div>
             <div class="col-md-4 mb-3">
-              <label for="nomeVistoriador" class="form-label">Contratante</label>
+              <label for="nomeVistoriador" class="form-label">Nome</label>
               <input type="text" id="nomeVistoriador" class="form-control">
             </div>
             <div class="col-md-4 mb-3">
