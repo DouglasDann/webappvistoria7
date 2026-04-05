@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <title>Vistoria de Pré Entrega</title>
@@ -13,785 +14,884 @@
 
 
 </head>
+
 <body>
 
-<div class="container">
-  <h1>VISTORIA DE PRÉ ENTREGA</h1>
+  <div class="container">
+    <h1>VISTORIA DE PRÉ ENTREGA</h1>
 
-  <!-- Formulário Inicial -->
-<form id="formulario-vistoria" class="container mt-4">
-  <!-- Dados do Proprietário -->
-  <section id="dados-proprietario" class="mb-5">
-    <h4 class="mb-3">Dados do Proprietário</h4>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <label for="nomeProprietario" class="form-label">Nome</label>
-        <input type="text" id="nomeProprietario" class="form-control" required>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="cpfProprietario" class="form-label">CPF</label>
-        <input type="text" id="cpfProprietario" class="form-control" required>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="data" class="form-label">Data da Vistoria</label>
-        <input type="date" id="data" class="form-control" required>
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="telefoneProprietario" class="form-label">Telefone</label>
-        <input type="tel" id="telefoneProprietario" class="form-control">
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" id="email" class="form-control">
-      </div>
-    </div>
-  </section>
-
-  <!-- Dados do Imóvel -->
-  <section id="dados-imovel" class="mb-5">
-    <h4 class="mb-3">Dados do Imóvel</h4>
-    <div class="row">
-      <div class="col-md-6 mb-3">
-        <label for="enderecoObra" class="form-label">Endereço</label>
-        <input type="text" id="enderecoObra" class="form-control" required>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="numero" class="form-label">Número</label>
-        <input type="text" id="numero" class="form-control">
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="complemento" class="form-label">Complemento</label>
-        <input type="text" id="complemento" class="form-control">
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="condominio" class="form-label">Condomínio</label>
-        <input type="text" id="condominio" class="form-control">
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="construtora" class="form-label">Construtora</label>
-        <input type="text" id="construtora" class="form-control">
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="dormitorios" class="form-label">Dormitórios</label>
-        <select id="dormitorios" class="form-select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="banheiros" class="form-label">Banheiros</label>
-        <select id="banheiros" class="form-select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="areaPrivativa" class="form-label">Área Privativa (m²)</label>
-        <input type="number" id="areaPrivativa" step="0.01" class="form-control">
-      </div>
-    </div>
-  </section>
-
-  <!-- Dados do Vistoriador -->
-  <section id="dados-vistoriador" class="mb-5">
-    <h4 class="mb-3">Dados do Vistoriador</h4>
-    <div class="mb-3 form-check form-switch">
-      <input class="form-check-input" type="checkbox" id="isTecnico" checked>
-      <label class="form-check-label" for="isTecnico">É Engenheiro/Arquiteto?</label>
-    </div>
-
-    <div id="dados-tecnico">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <label for="tituloTecnico" class="form-label">Título</label>
-          <select id="tituloTecnico" class="form-select">
-            <option value="Engenheiro">Engenheiro</option>
-            <option value="Arquiteto">Arquiteto</option>
-          </select>
+    <!-- Formulário Inicial -->
+    <form id="formulario-vistoria" class="container mt-4">
+      <!-- Dados do Proprietário -->
+      <section id="dados-proprietario" class="mb-5">
+        <h4 class="mb-3">Dados do Proprietário</h4>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="nomeProprietario" class="form-label">Nome</label>
+            <input type="text" id="nomeProprietario" class="form-control" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="cpfProprietario" class="form-label">CPF</label>
+            <input type="text" id="cpfProprietario" class="form-control" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="data" class="form-label">Data da Vistoria</label>
+            <input type="date" id="data" class="form-control" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="telefoneProprietario" class="form-label">Telefone</label>
+            <input type="tel" id="telefoneProprietario" class="form-control">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" class="form-control">
+          </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <label for="nomeVistoriador" class="form-label">Nome</label>
-          <input type="text" id="nomeVistoriador" class="form-control">
+      </section>
+
+      <!-- Dados do Imóvel -->
+      <section id="dados-imovel" class="mb-5">
+        <h4 class="mb-3">Dados do Imóvel</h4>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="enderecoObra" class="form-label">Endereço</label>
+            <input type="text" id="enderecoObra" class="form-control" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="numero" class="form-label">Número</label>
+            <input type="text" id="numero" class="form-control">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="complemento" class="form-label">Complemento</label>
+            <input type="text" id="complemento" class="form-control">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="condominio" class="form-label">Condomínio</label>
+            <input type="text" id="condominio" class="form-control">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="construtora" class="form-label">Construtora</label>
+            <input type="text" id="construtora" class="form-control">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="dormitorios" class="form-label">Dormitórios</label>
+            <select id="dormitorios" class="form-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="banheiros" class="form-label">Banheiros</label>
+            <select id="banheiros" class="form-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="areaPrivativa" class="form-label">Área Privativa (m²)</label>
+            <input type="number" id="areaPrivativa" step="0.01" class="form-control">
+          </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <label for="conselho" class="form-label">Conselho de Classe</label>
-          <select id="conselho" class="form-select">
-            <option value="CREA">CREA</option>
-            <option value="CAU">CAU</option>
-          </select>
+      </section>
+
+      <!-- Dados do Vistoriador -->
+      <section id="dados-vistoriador" class="mb-5">
+        <h4 class="mb-3">Dados do Vistoriador</h4>
+        <div class="mb-3 form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="isTecnico" checked>
+          <label class="form-check-label" for="isTecnico">É Engenheiro/Arquiteto?</label>
+        </div>
+
+        <div id="dados-tecnico">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="tituloTecnico" class="form-label">Título</label>
+              <select id="tituloTecnico" class="form-select">
+                <option value="Engenheiro">Engenheiro</option>
+                <option value="Arquiteto">Arquiteto</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="nomeVistoriador" class="form-label">Contratante</label>
+              <input type="text" id="nomeVistoriador" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="conselho" class="form-label">Conselho de Classe</label>
+              <select id="conselho" class="form-select">
+                <option value="CREA">CREA</option>
+                <option value="CAU">CAU</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="dados-nao-tecnico" class="mt-3" style="display: none;">
+          <div class="col-md-6">
+            <label for="nomeVistoriadorAlternativo" class="form-label">Nome</label>
+            <input type="text" id="nomeVistoriadorAlternativo" class="form-control" disabled>
+          </div>
+        </div>
+      </section>
+
+      <!-- Botão -->
+      <div class="text-center">
+        <button type="button" class="btn btn-primary btn-lg" onclick="iniciarVistoria()">Iniciar Vistoria</button>
+      </div>
+    </form>
+
+
+    <!-- Ícones de navegação fixos (visíveis só após iniciar a vistoria) -->
+    <div id="barra-abas" class="sticky-icons mb-4 hidden">
+      <div class="row text-center">
+        <div class="col icone-aba" onclick="mostrarAba('cozinha', this)">
+          <i class="fa-solid fa-utensils fa-2x"></i><br><small>Cozinha</small>
+        </div>
+        <div class="col icone-aba" onclick="mostrarAba('area-servico', this)">
+          <i class="fa-solid fa-sink fa-2x"></i><br><small>Área Serviço</small>
+        </div>
+        <div class="col icone-aba" onclick="mostrarAba('sala', this)">
+          <i class="fa-solid fa-couch fa-2x"></i><br><small>Sala</small>
+        </div>
+        <div class="col icone-aba" onclick="mostrarAba('dormitorio', this)">
+          <i class="fa-solid fa-bed fa-2x"></i><br><small>Dormitório</small>
+        </div>
+        <div class="col icone-aba" onclick="mostrarAba('banheiro', this)">
+          <i class="fa-solid fa-toilet fa-2x"></i><br><small>Banheiro</small>
+        </div>
+        <div class="col icone-aba" onclick="mostrarAba('sacada', this)">
+          <i class="fa-solid fa-shield-halved fa-2x"></i><br><small>Sacada</small>
         </div>
       </div>
     </div>
 
-    <div id="dados-nao-tecnico" class="mt-3" style="display: none;">
-      <div class="col-md-6">
-        <label for="nomeVistoriadorAlternativo" class="form-label">Nome</label>
-        <input type="text" id="nomeVistoriadorAlternativo" class="form-control" disabled>
-      </div>
-    </div>
-  </section>
+    <!-- Container das abas de vistoria (oculto por padrão) -->
+    <div id="abas-vistoria" class="hidden checklist-tabela">
 
-  <!-- Botão -->
-  <div class="text-center">
-    <button type="button" class="btn btn-primary btn-lg" onclick="iniciarVistoria()">Iniciar Vistoria</button>
-  </div>
-</form>
+      <!-- COZINHA (oculta inicialmente) -->
+      <!-- COZINHA -->
+      <section id="aba-cozinha" class="hidden checklist-tabela">
+        <h5 class="mt-4 mb-3 fw-bold">Cozinha</h5>
+        <table class="table table-bordered align-middle">
+          <thead>
+            <tr>
+              <th rowspan="2">Elemento Avaliado</th>
+              <th colspan="3" class="text-center">Status</th>
+              <th rowspan="2" class="text-center">Foto</th>
+              <th rowspan="2">Observações</th>
+            </tr>
+            <tr>
+              <th class="text-center">N/A</th>
+              <th class="text-center">Conforme</th>
+              <th class="text-center">Não Conforme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Revestimento cerâmico (pisos e paredes)</td>
+              <td class="text-center status"><input type="radio" name="cozinha1" id="naC1"><label for="naC1">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="cozinha1" id="cC1"><label
+                  for="cC1">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="cozinha1" id="ncC1"><label for="ncC1">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
 
-
-<!-- Ícones de navegação fixos (visíveis só após iniciar a vistoria) -->
-<div id="barra-abas" class="sticky-icons mb-4 hidden">
-  <div class="row text-center">
-    <div class="col icone-aba" onclick="mostrarAba('cozinha', this)">
-      <i class="fa-solid fa-utensils fa-2x"></i><br><small>Cozinha</small>
-    </div>
-    <div class="col icone-aba" onclick="mostrarAba('area-servico', this)">
-      <i class="fa-solid fa-sink fa-2x"></i><br><small>Área Serviço</small>
-    </div>
-    <div class="col icone-aba" onclick="mostrarAba('sala', this)">
-      <i class="fa-solid fa-couch fa-2x"></i><br><small>Sala</small>
-    </div>
-    <div class="col icone-aba" onclick="mostrarAba('dormitorio', this)">
-      <i class="fa-solid fa-bed fa-2x"></i><br><small>Dormitório</small>
-    </div>
-    <div class="col icone-aba" onclick="mostrarAba('banheiro', this)">
-      <i class="fa-solid fa-toilet fa-2x"></i><br><small>Banheiro</small>
-    </div>
-    <div class="col icone-aba" onclick="mostrarAba('sacada', this)">
-      <i class="fa-solid fa-shield-halved fa-2x"></i><br><small>Sacada</small>
-    </div>
-  </div>
-</div>
-
-<!-- Container das abas de vistoria (oculto por padrão) -->
-<div id="abas-vistoria" class="hidden checklist-tabela">
-
-  <!-- COZINHA (oculta inicialmente) -->
-  <!-- COZINHA -->
-<section id="aba-cozinha" class="hidden checklist-tabela">
-  <h5 class="mt-4 mb-3 fw-bold">Cozinha</h5>
-  <table class="table table-bordered align-middle">
-    <thead>
-      <tr>
-        <th rowspan="2">Elemento Avaliado</th>
-        <th colspan="3" class="text-center">Status</th>
-        <th rowspan="2" class="text-center">Foto</th>
-        <th rowspan="2">Observações</th>
-      </tr>
-      <tr>
-        <th class="text-center">N/A</th>
-        <th class="text-center">Conforme</th>
-        <th class="text-center">Não Conforme</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Revestimento cerâmico (pisos e paredes)</td>
-        <td class="text-center status"><input type="radio" name="cozinha1" id="naC1"><label for="naC1">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha1" id="cC1"><label for="cC1">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha1" id="ncC1"><label for="ncC1">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+              <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr>
+              <td>Instalações hidráulicas (torneiras, sifões, válvulas)</td>
+              <td class="text-center status"><input type="radio" name="cozinha2" id="naC2"><label for="naC2">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="cozinha2" id="cC2"><label
+                  for="cC2">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="cozinha2" id="ncC2"><label for="ncC2">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr>
+              <td>Instalação de gás (se aplicável)</td>
+              <td class="text-center status"><input type="radio" name="cozinha3" id="naC3"><label for="naC3">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="cozinha3" id="cC3"><label
+                  for="cC3">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="cozinha3" id="ncC3"><label for="ncC3">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr>
+              <td>Ventilação e iluminação natural</td>
+              <td class="text-center status"><input type="radio" name="cozinha4" id="naC4"><label for="naC4">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="cozinha4" id="cC4"><label
+                  for="cC4">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="cozinha4" id="ncC4"><label for="ncC4">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr>
+              <td>Tomadas e interruptores</td>
+              <td class="text-center status"><input type="radio" name="cozinha5" id="naC5"><label for="naC5">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="cozinha5" id="cC5"><label
+                  for="cC5">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="cozinha5" id="ncC5"><label for="ncC5">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Botões finais -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex gap-2">
+            <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
+            <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-
-        <td><input type="text" class="form-control"></td>
-      </tr>
-      <tr>
-        <td>Instalações hidráulicas (torneiras, sifões, válvulas)</td>
-        <td class="text-center status"><input type="radio" name="cozinha2" id="naC2"><label for="naC2">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha2" id="cC2"><label for="cC2">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha2" id="ncC2"><label for="ncC2">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+          <div>
+            <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control"></td>
-      </tr>
-      <tr>
-        <td>Instalação de gás (se aplicável)</td>
-        <td class="text-center status"><input type="radio" name="cozinha3" id="naC3"><label for="naC3">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha3" id="cC3"><label for="cC3">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha3" id="ncC3"><label for="ncC3">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
+          <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
+        </div>
+      </section>
+
+
+      <!-- ÁREA DE SERVIÇO -->
+      <section id="aba-area-servico" class="hidden checklist-tabela">
+        <h5 class="mt-4 mb-3 fw-bold">Área de Serviço</h5>
+        <table class="table table-bordered align-middle">
+          <thead>
+            <tr>
+              <th rowspan="2">Elemento Avaliado</th>
+              <th colspan="3" class="text-center">Status</th>
+              <th rowspan="2" class="text-center">Foto</th>
+              <th rowspan="2">Observações</th>
+            </tr>
+            <tr>
+              <th class="text-center">N/A</th>
+              <th class="text-center">Conforme</th>
+              <th class="text-center">Não Conforme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ralo e inclinação do piso</td>
+              <td class="text-center status"><input type="radio" name="servico1" id="naS1"><label for="naS1">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="servico1" id="cS1"><label
+                  for="cS1">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="servico1" id="ncS1"><label for="ncS1">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr>
+              <td>Instalações hidráulicas (máquina, tanque)</td>
+              <td class="text-center status"><input type="radio" name="servico2" id="naS2"><label for="naS2">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="servico2" id="cS2"><label
+                  for="cS2">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="servico2        <td class=" foto-col
+                  text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td class="text-center"><i class="fa-solid fa-camera"></i></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr>
+              <td>Arejamento e iluminação natural</td>
+              <td class="text-center status"><input type="radio" name="servico3" id="naS3"><label for="naS3">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="servico3" id="cS3"><label
+                  for="cS3">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="servico3" id="ncS3"><label for="ncS3">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr>
+              <td>Tomadas com aterramento</td>
+              <td class="text-center status"><input type="radio" name="servico4" id="naS4"><label for="naS4">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="servico4" id="cS4"><label
+                  for="cS4">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="servico4" id="ncS4"><label for="ncS4">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Botões finais -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex gap-2">
+            <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
+            <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control"></td>
-      </tr>
-      <tr>
-        <td>Ventilação e iluminação natural</td>
-        <td class="text-center status"><input type="radio" name="cozinha4" id="naC4"><label for="naC4">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha4" id="cC4"><label for="cC4">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha4" id="ncC4"><label for="ncC4">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+          <div>
+            <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control"></td>
-      </tr>
-      <tr>
-        <td>Tomadas e interruptores</td>
-        <td class="text-center status"><input type="radio" name="cozinha5" id="naC5"><label for="naC5">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha5" id="cC5"><label for="cC5">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="cozinha5" id="ncC5"><label for="ncC5">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
+          <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
+        </div>
+
+      </section>
+
+      <!-- SALA -->
+      <section id="aba-sala" class="hidden checklist-tabela">
+        <h5 class="mt-4 mb-3 fw-bold">Sala</h5>
+        <table class="table table-bordered align-middle">
+          <thead>
+            <tr>
+              <th rowspan="2">Elemento Avaliado</th>
+              <th colspan="3" class="text-center">Status</th>
+              <th rowspan="2" class="text-center">Foto</th>
+              <th rowspan="2">Observações</th>
+            </tr>
+            <tr>
+              <th class="text-center">N/A</th>
+              <th class="text-center">Conforme</th>
+              <th class="text-center">Não Conforme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Revestimento de piso (cerâmica, vinílico, laminado)</td>
+              <td class="text-center status"><input type="radio" name="sala1" id="naSa1"><label for="naSa1">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="sala1" id="cSa1"><label
+                  for="cSa1">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="sala1" id="ncSa1"><label for="ncSa1">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Tomadas, interruptores, ponto de TV/internet</td>
+              <td class="text-center status"><input type="radio" name="sala2" id="naSa2"><label for="naSa2">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="sala2" id="cSa2"><label
+                  for="cSa2">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="sala2" id="ncSa2"><label for="ncSa2">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Esquadrias (janelas e portas)</td>
+              <td class="text-center status"><input type="radio" name="sala3" id="naSa3"><label for="naSa3">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="sala3" id="cSa3"><label
+                  for="cSa3">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="sala3" id="ncSa3"><label for="ncSa3">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Acabamento de paredes e teto</td>
+              <td class="text-center status"><input type="radio" name="sala4" id="naSa4"><label for="naSa4">N/A</label>
+              </td>
+              <td class="text-center status"><input type="radio" name="sala4" id="cSa4"><label
+                  for="cSa4">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="sala4" id="ncSa4"><label for="ncSa4">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Botões finais -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex gap-2">
+            <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
+            <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control"></td>
-      </tr>
-    </tbody>
-  </table>
-  <!-- Botões finais -->
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <div class="d-flex gap-2">
-      <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
-      <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
-    </div>
-    <div>
-      <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between align-items-center mb-2">
-    <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
-    <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
-  </div>
-</section>
-
-
-  <!-- ÁREA DE SERVIÇO -->
-<section id="aba-area-servico" class="hidden checklist-tabela">
-  <h5 class="mt-4 mb-3 fw-bold">Área de Serviço</h5>
-  <table class="table table-bordered align-middle">
-    <thead>
-      <tr>
-        <th rowspan="2">Elemento Avaliado</th>
-        <th colspan="3" class="text-center">Status</th>
-        <th rowspan="2" class="text-center">Foto</th>
-        <th rowspan="2">Observações</th>
-      </tr>
-      <tr>
-        <th class="text-center">N/A</th>
-        <th class="text-center">Conforme</th>
-        <th class="text-center">Não Conforme</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Ralo e inclinação do piso</td>
-        <td class="text-center status"><input type="radio" name="servico1" id="naS1"><label for="naS1">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="servico1" id="cS1"><label for="cS1">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="servico1" id="ncS1"><label for="ncS1">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+          <div>
+            <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control"></td>
-      </tr>
-      <tr>
-        <td>Instalações hidráulicas (máquina, tanque)</td>
-        <td class="text-center status"><input type="radio" name="servico2" id="naS2"><label for="naS2">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="servico2" id="cS2"><label for="cS2">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="servico2        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
+          <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
+        </div>
+      </section>
+
+
+      <!-- DORMITÓRIO -->
+      <!-- DORMITÓRIO -->
+      <section id="aba-dormitorio" class="hidden checklist-tabela">
+        <h5 class="mt-4 mb-3 fw-bold">Dormitório</h5>
+        <table class="table table-bordered align-middle">
+          <thead>
+            <tr>
+              <th rowspan="2">Elemento Avaliado</th>
+              <th colspan="3" class="text-center">Status</th>
+              <th rowspan="2" class="text-center">Foto</th>
+              <th rowspan="2">Observações</th>
+            </tr>
+            <tr>
+              <th class="text-center">N/A</th>
+              <th class="text-center">Conforme</th>
+              <th class="text-center">Não Conforme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Esquadrias (janelas e venezianas)</td>
+              <td class="text-center status"><input type="radio" name="dormitorio1" id="naD1"><label
+                  for="naD1">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="dormitorio1" id="cD1"><label
+                  for="cD1">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="dormitorio1" id="ncD1"><label for="ncD1">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Instalações elétricas (iluminação, tomadas)</td>
+              <td class="text-center status"><input type="radio" name="dormitorio2" id="naD2"><label
+                  for="naD2">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="dormitorio2" id="cD2"><label
+                  for="cD2">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="dormitorio2" id="ncD2"><label for="ncD2">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Acabamentos de paredes, piso e teto</td>
+              <td class="text-center status"><input type="radio" name="dormitorio3" id="naD3"><label
+                  for="naD3">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="dormitorio3" id="cD3"><label
+                  for="cD3">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="dormitorio3" id="ncD3"><label for="ncD3">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Botões finais -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex gap-2">
+            <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
+            <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>        <td class="text-center"><i class="fa-solid fa-camera"></i></td>
-        <td><input type="text" class="form-control"></td>
-      </tr>
-      <tr>
-        <td>Arejamento e iluminação natural</td>
-        <td class="text-center status"><input type="radio" name="servico3" id="naS3"><label for="naS3">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="servico3" id="cS3"><label for="cS3">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="servico3" id="ncS3"><label for="ncS3">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+          <div>
+            <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control"></td>
-      </tr>
-      <tr>
-        <td>Tomadas com aterramento</td>
-        <td class="text-center status"><input type="radio" name="servico4" id="naS4"><label for="naS4">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="servico4" id="cS4"><label for="cS4">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="servico4" id="ncS4"><label for="ncS4">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
+          <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
+        </div>
+      </section>
+
+
+      <!-- BANHEIRO -->
+      <!-- BANHEIRO -->
+      <section id="aba-banheiro" class="hidden checklist-tabela">
+        <h5 class="mt-4 mb-3 fw-bold">Banheiro</h5>
+        <table class="table table-bordered align-middle">
+          <thead>
+            <tr>
+              <th rowspan="2">Elemento Avaliado</th>
+              <th colspan="3" class="text-center">Status</th>
+              <th rowspan="2" class="text-center">Foto</th>
+              <th rowspan="2">Observações</th>
+            </tr>
+            <tr>
+              <th class="text-center">N/A</th>
+              <th class="text-center">Conforme</th>
+              <th class="text-center">Não Conforme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Impermeabilização de pisos e paredes</td>
+              <td class="text-center status"><input type="radio" name="banheiro1" id="naB1"><label
+                  for="naB1">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="banheiro1" id="cB1"><label
+                  for="cB1">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="banheiro1" id="ncB1"><label for="ncB1">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Louças e metais (torneiras, chuveiro, válvulas)</td>
+              <td class="text-center status"><input type="radio" name="banheiro2" id="naB2"><label
+                  for="naB2">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="banheiro2" id="cB2"><label
+                  for="cB2">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="banheiro2" id="ncB2"><label for="ncB2">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Ventilação (natural ou mecânica)</td>
+              <td class="text-center status"><input type="radio" name="banheiro3" id="naB3"><label
+                  for="naB3">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="banheiro3" id="cB3"><label
+                  for="cB3">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="banheiro3" id="ncB3"><label for="ncB3">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Ralo, inclinação e escoamento</td>
+              <td class="text-center status"><input type="radio" name="banheiro4" id="naB4"><label
+                  for="naB4">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="banheiro4" id="cB4"><label
+                  for="cB4">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="banheiro4" id="ncB4"><label for="ncB4">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Botões finais -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex gap-2">
+            <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
+            <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control"></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <!-- Botões finais -->
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <div class="d-flex gap-2">
-      <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
-      <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
-    </div>
-    <div>
-      <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between align-items-center mb-2">
-    <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
-    <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
-  </div>
-
-</section>
-
-<!-- SALA -->
-<section id="aba-sala" class="hidden checklist-tabela">
-  <h5 class="mt-4 mb-3 fw-bold">Sala</h5>
-  <table class="table table-bordered align-middle">
-    <thead>
-      <tr>
-        <th rowspan="2">Elemento Avaliado</th>
-        <th colspan="3" class="text-center">Status</th>
-        <th rowspan="2" class="text-center">Foto</th>
-        <th rowspan="2">Observações</th>
-      </tr>
-      <tr>
-        <th class="text-center">N/A</th>
-        <th class="text-center">Conforme</th>
-        <th class="text-center">Não Conforme</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Revestimento de piso (cerâmica, vinílico, laminado)</td>
-        <td class="text-center status"><input type="radio" name="sala1" id="naSa1"><label for="naSa1">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="sala1" id="cSa1"><label for="cSa1">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="sala1" id="ncSa1"><label for="ncSa1">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+          <div>
+            <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Tomadas, interruptores, ponto de TV/internet</td>
-        <td class="text-center status"><input type="radio" name="sala2" id="naSa2"><label for="naSa2">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="sala2" id="cSa2"><label for="cSa2">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="sala2" id="ncSa2"><label for="ncSa2">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
+          <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
+        </div>
+      </section>
+
+
+      <!-- SACADA -->
+      <!-- SACADA -->
+      <section id="aba-sacada" class="hidden checklist-tabela">
+        <h5 class="mt-4 mb-3 fw-bold">Sacada</h5>
+        <table class="table table-bordered align-middle mb-4">
+          <thead>
+            <tr>
+              <th rowspan="2">Elemento Avaliado</th>
+              <th colspan="3" class="text-center">Status</th>
+              <th rowspan="2" class="text-center">Foto</th>
+              <th rowspan="2">Observações</th>
+            </tr>
+            <tr>
+              <th class="text-center">N/A</th>
+              <th class="text-center">Conforme</th>
+              <th class="text-center">Não Conforme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Guarda-corpo</td>
+              <td class="text-center status"><input type="radio" name="sacada1" id="naSac1"><label
+                  for="naSac1">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="sacada1" id="cSac1"><label
+                  for="cSac1">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="sacada1" id="ncSac1"><label for="ncSac1">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Piso e impermeabilização</td>
+              <td class="text-center status"><input type="radio" name="sacada2" id="naSac2"><label
+                  for="naSac2">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="sacada2" id="cSac2"><label
+                  for="cSac2">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="sacada2" id="ncSac2"><label for="ncSac2">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Esquadrias de acesso (porta de correr)</td>
+              <td class="text-center status"><input type="radio" name="sacada3" id="naSac3"><label
+                  for="naSac3">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="sacada3" id="cSac3"><label
+                  for="cSac3">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="sacada3" id="ncSac3"><label for="ncSac3">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+              <td>Iluminação externa</td>
+              <td class="text-center status"><input type="radio" name="sacada4" id="naSac4"><label
+                  for="naSac4">N/A</label></td>
+              <td class="text-center status"><input type="radio" name="sacada4" id="cSac4"><label
+                  for="cSac4">Conforme</label></td>
+              <td class="text-center status"><input type="radio" name="sacada4" id="ncSac4"><label for="ncSac4">Não
+                  Conforme</label></td>
+              <td class="foto-col text-center">
+                <div class="fotos-container">
+                  <!-- Miniaturas aparecerão aqui -->
+                </div>
+                <label class="cursor-pointer">
+                  <i class="fa-solid fa-camera"></i>
+                  <input type="file" accept="image/*" capture="environment" style="display: none;"
+                    onchange="previewFoto(this)">
+                </label>
+              </td>
+              <td><input type="text" class="form-control" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Botões finais -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex gap-2">
+            <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
+            <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Esquadrias (janelas e portas)</td>
-        <td class="text-center status"><input type="radio" name="sala3" id="naSa3"><label for="naSa3">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="sala3" id="cSa3"><label for="cSa3">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="sala3" id="ncSa3"><label for="ncSa3">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
+          <div>
+            <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
           </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Acabamento de paredes e teto</td>
-        <td class="text-center status"><input type="radio" name="sala4" id="naSa4"><label for="naSa4">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="sala4" id="cSa4"><label for="cSa4">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="sala4" id="ncSa4"><label for="ncSa4">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-    </tbody>
-  </table>
+        </div>
 
-  <!-- Botões finais -->
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <div class="d-flex gap-2">
-      <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
-      <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
-    </div>
-    <div>
-      <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between align-items-center mb-2">
-    <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
-    <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
-  </div>
-</section>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
+          <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
+        </div>
+      </section>
 
 
-  <!-- DORMITÓRIO -->
-  <!-- DORMITÓRIO -->
-<section id="aba-dormitorio" class="hidden checklist-tabela">
-  <h5 class="mt-4 mb-3 fw-bold">Dormitório</h5>
-  <table class="table table-bordered align-middle">
-    <thead>
-      <tr>
-        <th rowspan="2">Elemento Avaliado</th>
-        <th colspan="3" class="text-center">Status</th>
-        <th rowspan="2" class="text-center">Foto</th>
-        <th rowspan="2">Observações</th>
-      </tr>
-      <tr>
-        <th class="text-center">N/A</th>
-        <th class="text-center">Conforme</th>
-        <th class="text-center">Não Conforme</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Esquadrias (janelas e venezianas)</td>
-        <td class="text-center status"><input type="radio" name="dormitorio1" id="naD1"><label for="naD1">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="dormitorio1" id="cD1"><label for="cD1">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="dormitorio1" id="ncD1"><label for="ncD1">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Instalações elétricas (iluminação, tomadas)</td>
-        <td class="text-center status"><input type="radio" name="dormitorio2" id="naD2"><label for="naD2">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="dormitorio2" id="cD2"><label for="cD2">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="dormitorio2" id="ncD2"><label for="ncD2">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Acabamentos de paredes, piso e teto</td>
-        <td class="text-center status"><input type="radio" name="dormitorio3" id="naD3"><label for="naD3">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="dormitorio3" id="cD3"><label for="cD3">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="dormitorio3" id="ncD3"><label for="ncD3">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-    </tbody>
-  </table>
+    </div> <!-- Fim de #abas-vistoria -->
 
-  <!-- Botões finais -->
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <div class="d-flex gap-2">
-      <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
-      <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
-    </div>
-    <div>
-      <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between align-items-center mb-2">
-    <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
-    <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
-  </div>
-</section>
-
-
-  <!-- BANHEIRO -->
-  <!-- BANHEIRO -->
-<section id="aba-banheiro" class="hidden checklist-tabela">
-  <h5 class="mt-4 mb-3 fw-bold">Banheiro</h5>
-  <table class="table table-bordered align-middle">
-    <thead>
-      <tr>
-        <th rowspan="2">Elemento Avaliado</th>
-        <th colspan="3" class="text-center">Status</th>
-        <th rowspan="2" class="text-center">Foto</th>
-        <th rowspan="2">Observações</th>
-      </tr>
-      <tr>
-        <th class="text-center">N/A</th>
-        <th class="text-center">Conforme</th>
-        <th class="text-center">Não Conforme</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Impermeabilização de pisos e paredes</td>
-        <td class="text-center status"><input type="radio" name="banheiro1" id="naB1"><label for="naB1">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="banheiro1" id="cB1"><label for="cB1">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="banheiro1" id="ncB1"><label for="ncB1">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Louças e metais (torneiras, chuveiro, válvulas)</td>
-        <td class="text-center status"><input type="radio" name="banheiro2" id="naB2"><label for="naB2">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="banheiro2" id="cB2"><label for="cB2">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="banheiro2" id="ncB2"><label for="ncB2">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Ventilação (natural ou mecânica)</td>
-        <td class="text-center status"><input type="radio" name="banheiro3" id="naB3"><label for="naB3">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="banheiro3" id="cB3"><label for="cB3">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="banheiro3" id="ncB3"><label for="ncB3">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Ralo, inclinação e escoamento</td>
-        <td class="text-center status"><input type="radio" name="banheiro4" id="naB4"><label for="naB4">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="banheiro4" id="cB4"><label for="cB4">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="banheiro4" id="ncB4"><label for="ncB4">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- Botões finais -->
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <div class="d-flex gap-2">
-      <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
-      <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
-    </div>
-    <div>
-      <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between align-items-center mb-2">
-    <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
-    <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
-  </div>
-</section>
-
-
-  <!-- SACADA -->
-  <!-- SACADA -->
-<section id="aba-sacada" class="hidden checklist-tabela">
-  <h5 class="mt-4 mb-3 fw-bold">Sacada</h5>
-  <table class="table table-bordered align-middle mb-4">
-    <thead>
-      <tr>
-        <th rowspan="2">Elemento Avaliado</th>
-        <th colspan="3" class="text-center">Status</th>
-        <th rowspan="2" class="text-center">Foto</th>
-        <th rowspan="2">Observações</th>
-      </tr>
-      <tr>
-        <th class="text-center">N/A</th>
-        <th class="text-center">Conforme</th>
-        <th class="text-center">Não Conforme</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Guarda-corpo</td>
-        <td class="text-center status"><input type="radio" name="sacada1" id="naSac1"><label for="naSac1">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="sacada1" id="cSac1"><label for="cSac1">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="sacada1" id="ncSac1"><label for="ncSac1">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Piso e impermeabilização</td>
-        <td class="text-center status"><input type="radio" name="sacada2" id="naSac2"><label for="naSac2">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="sacada2" id="cSac2"><label for="cSac2">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="sacada2" id="ncSac2"><label for="ncSac2">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Esquadrias de acesso (porta de correr)</td>
-        <td class="text-center status"><input type="radio" name="sacada3" id="naSac3"><label for="naSac3">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="sacada3" id="cSac3"><label for="cSac3">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="sacada3" id="ncSac3"><label for="ncSac3">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-      <tr>
-        <td>Iluminação externa</td>
-        <td class="text-center status"><input type="radio" name="sacada4" id="naSac4"><label for="naSac4">N/A</label></td>
-        <td class="text-center status"><input type="radio" name="sacada4" id="cSac4"><label for="cSac4">Conforme</label></td>
-        <td class="text-center status"><input type="radio" name="sacada4" id="ncSac4"><label for="ncSac4">Não Conforme</label></td>
-        <td class="foto-col text-center">
-          <div class="fotos-container">
-            <!-- Miniaturas aparecerão aqui -->
-          </div>
-          <label class="cursor-pointer">
-            <i class="fa-solid fa-camera"></i>
-            <input type="file" accept="image/*" capture="environment" style="display: none;" onchange="previewFoto(this)">
-          </label>
-        </td>
-        <td><input type="text" class="form-control" /></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- Botões finais -->
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <div class="d-flex gap-2">
-      <button class="btn btn-secondary" onclick="adicionarLinha(this)">Adicionar Item</button>
-      <button class="btn btn-danger" onclick="excluirUltimaLinha(this)">Excluir Item</button>
-    </div>
-    <div>
-      <button class="btn btn-salvar-ambiente" onclick="salvarAmbiente(this)">Salvar Ambiente</button>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between align-items-center mb-2">
-    <button class="btn btn-voltar-formulario" onclick="voltarFormulario()">← Voltar ao Formulário</button>
-    <button class="btn btn-salvar-vistoria" onclick="salvarVistoria()">Salvar Vistoria</button>
-  </div>
-</section>
-
-
-</div> <!-- Fim de #abas-vistoria -->
-
-<script defer src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
 
 
 </body>
+
 </html>
