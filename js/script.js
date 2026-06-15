@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formulario-vistoria");
   const campos = form.querySelectorAll("input, select");
 
+  
+
   campos.forEach(campo => {
     const valorSalvo = localStorage.getItem(campo.id);
     if (valorSalvo !== null) {
@@ -40,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+
 // 🧩 2. Alternância entre técnico e não técnico
 const toggle = document.getElementById("isTecnico");
 const divTecnico = document.getElementById("dados-tecnico");
@@ -63,6 +67,75 @@ inputProprietario.addEventListener("input", () => {
     inputAlternativo.value = inputProprietario.value;
     localStorage.setItem(inputAlternativo.id, inputAlternativo.value);
   }
+});
+
+//Aparecer os icones da vistoria
+window.addEventListener("DOMContentLoaded", function() {
+  // tudo dentro daqui
+
+  function atualizarIcones() {
+    let qtdDormitorios = document.getElementById("dormitorios").value;
+    let qtdBanheiros = document.getElementById("banheiros").value;
+    let temSacada = document.getElementById("sacada").value;
+
+    let container = document.getElementById("container-icones");
+
+    container.innerHTML = "";
+
+    // 🔹 FIXOS
+    container.innerHTML += `
+      <div class="icone-aba" onclick="mostrarAba('cozinha', this)">
+        <i class="fa-solid fa-utensils fa-2x"></i><br>
+        <small>Cozinha</small>
+      </div>
+      <div class="icone-aba" onclick="mostrarAba('area-servico', this)">
+        <i class="fa-solid fa-sink fa-2x"></i><br>
+        <small>Área Serviço</small>
+      </div>
+      <div class="icone-aba" onclick="mostrarAba('sala', this)">
+        <i class="fa-solid fa-couch fa-2x"></i><br>
+        <small>Sala</small>
+      </div>
+    `;
+
+    // 🛏️ Dormitórios
+    for (let i = 1; i <= qtdDormitorios; i++) {
+      container.innerHTML += `
+        <div class="icone-aba" onclick="mostrarAba('dormitorio${i}', this)">
+          <i class="fa-solid fa-bed fa-2x"></i><br>
+          <small>Dormitório ${i}</small>
+        </div>
+      `;
+    }
+
+    // 🚽 Banheiros
+    for (let i = 1; i <= qtdBanheiros; i++) {
+      container.innerHTML += `
+        <div class="icone-aba" onclick="mostrarAba('banheiro${i}', this)">
+          <i class="fa-solid fa-toilet fa-2x"></i><br>
+          <small>Banheiro ${i}</small>
+        </div>
+      `;
+    }
+
+    // 🏠 Sacada
+    if (temSacada === "sim") {
+      container.innerHTML += `
+        <div class="icone-aba" onclick="mostrarAba('sacada', this)">
+          <i class="fa-solid fa-shield-halved fa-2x"></i><br>
+          <small>Sacada</small>
+        </div>
+      `;
+    }
+  }
+
+  // Eventos
+  document.getElementById("dormitorios").addEventListener("change", atualizarIcones);
+  document.getElementById("banheiros").addEventListener("change", atualizarIcones);
+  document.getElementById("sacada").addEventListener("change", atualizarIcones);
+
+  // inicializa ao carregar a página
+  atualizarIcones();
 });
 
 // 🧩 3. Navegação entre abas
