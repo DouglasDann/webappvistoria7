@@ -16,6 +16,10 @@
       padding: 10px 0;
       border-bottom: 2px solid #e0e0e0;
     }
+    .btn btn-primary btn-lg{
+      background-color: #000;
+    }
+
     .icone-aba {
       cursor: pointer;
     }

@@ -171,18 +171,13 @@ document.addEventListener("DOMContentLoaded", () => {
 // =========================================================================
 async function iniciarVistoria() {
   document.getElementById("formulario-vistoria")?.classList.add("hidden");
-  document.getElementById("barra-abas")?.classList.remove("hidden");
+  document.getElementById("container-icones")?.classList.remove("hidden");
   document.getElementById("abas-vistoria")?.classList.remove("hidden");
-  
-  if (!(await localforage.getItem("abaAtiva"))) {
-    const primeiroIcone = document.querySelector(".icone-aba");
-    if (primeiroIcone) primeiroIcone.click();
-  }
 }
 
 function voltarFormulario() {
   document.getElementById("formulario-vistoria")?.classList.remove("hidden");
-  document.getElementById("barra-abas")?.classList.add("hidden");
+  document.getElementById("container-icones")?.classList.add("hidden");
   document.getElementById("abas-vistoria")?.classList.add("hidden");
   document.querySelectorAll(".icone-aba").forEach(i => i.classList.remove("active"));
   document.querySelectorAll("#abas-vistoria section").forEach(s => s.classList.add("hidden"));
