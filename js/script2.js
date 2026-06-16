@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // =========================================================================
 async function iniciarVistoria() {
   document.getElementById("formulario-vistoria")?.classList.add("hidden");
-  document.getElementById("container-icones")?.classList.remove("hidden");
+  //document.getElementById("container-icones")?.classList.remove("hidden");
   document.getElementById("abas-vistoria")?.classList.remove("hidden");
 }
 
